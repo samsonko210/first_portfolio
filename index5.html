@@ -4,7 +4,8 @@
 	<title>
 		Sam's Portfolio 
 	</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"><link href='https://fonts.googleapis.com/css?family=Work+Sans:100,400' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js" />
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:100,400' rel='stylesheet' type='text/css' />
 </script>
 
 	<style>
@@ -36,6 +37,14 @@
 			text-align: center;
 			font-size: 40px;
 		}
+		.show {
+			z-index: 9999;
+			position: absolute;
+			left: 48%;
+			top: 200px;
+			height: 70px;
+			width: 60px;
+		}
 	</style>
 </head>	
 <body>
@@ -52,7 +61,14 @@
 	<div class = "contactmeheading">
 		How to contact me:
 	</div>
-	
+	<button class = "show"> Show </button>
 </body>
-
+<script>
+	$(document).ready(function(){
+		$(".show").click(function(){	
+		$(".contactmetext").slideToggle(1000)
+	
+		});
+	});
+</script>
 </html> 
