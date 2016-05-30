@@ -49,9 +49,12 @@
 			background-color: black;
 			color: white;
 			border: solid black;
+			opacity: .8;
 		}
 		.show-btn:hover {
-			opacity: .8;
+			opacity: .7;
+			height: 30px;
+
 		}
 		.footer {
 			position: fixed;
@@ -80,6 +83,23 @@
 			opacity: .6;
 			text-align: center;
 		}
+		.back-btn {
+			left: 0;
+			top: 0;
+			z-index: 9999;
+			color: white;
+			font-weight: 500px;
+			position: fixed;
+			text-align: center;
+			width: 70px;
+			height: 100%;
+			background-color: black;
+			border: solid black;
+			opacity: .8;
+		}
+		.back-btn:hover {
+			opacity: .6;
+		}
 	</style>
 </head>	
 <body>
@@ -99,6 +119,7 @@
 	<button class = "show-btn"> Show </button>
 	<div class = "footer"> Created by Samson Ko </div>
 	<div class = "upperrightbox"> Samson's Portfolio</div>
+	<button class = "back-btn" onclick = 'location.href ="file:///Users/jaeminko/Desktop/Web/Samson_portfolio/index2.html";'> Back </button>
 </body>
 <script>
 	$(document).ready(function(){
