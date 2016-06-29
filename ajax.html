@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<title>ajax</title>
+</head>
+<body>
+<script>
+	$(document).ready(function(){
+		$.ajax({
+				method: "GET",
+				contentType: "application/json",
+				url: "https://nodetodolistapi.herokuapp.com/api/todos",
+				success: function(data){
+					console.log(data[0].title);
+				}
+
+			});
+
+
+	});
+	
+		</script>
+</body>
+</html>
