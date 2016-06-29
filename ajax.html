@@ -6,20 +6,21 @@
 </head>
 <body>
 <script>
-	$(document).ready(function(){
+
+	$(function(){
 		$.ajax({
-				method: "GET",
-				contentType: "application/json",
-				url: "https://nodetodolistapi.herokuapp.com/api/todos",
-				success: function(data){
-					console.log(data[0].title);
+			type: 'GET',
+			url: 'https://nodetodolistapi.herokuapp.com/api/todos',
+			success: function(data) {
+				console.log(data);
+				document.getElementById("container").innerHTML = data[0].title;
 				}
-
 			});
+		});
 
 
-	});
-	
-		</script>
+</script>
+
+<div id  = "container"></div>
 </body>
 </html>
