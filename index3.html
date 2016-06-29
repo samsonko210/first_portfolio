@@ -33,11 +33,10 @@
 		}
 
 		.aboutmedescription {
-			top: 400px;
 			position: center;
 			margin-left: 200px;
 			margin-right: 200px;
-			z-index: 9999;
+			z-index: 999;
 			position: relative;
 			color: white;
 			font-weight: 300;
@@ -47,29 +46,54 @@
 			text-align: center;
 			font-family: 'Lato', serif;
 			background-size: 500px;
+			top:125px;
+
 		}
 		.aboutmetitle {
-			top: 200px;
+			top: 10px;
 			position: center;
-			z-index: 9999;
+			z-index: 999;
 			position: relative;
 			color: white;
 			font-family: 'Lato', sans-serif;
 			border: none;
 			font-size: 70px;
 			font-weight: 800;
-			left: 38%;
-			
+			left: 38%;	
 		}
+		.aboutmeimg {
+			top: 100px;
+			position: center;
+			z-index: 999;
+			position: relative;
+			border: solid white;
+			left: 37.5%;
+			width: 300px;
+		}
+		.coverdiv {
+			z-index: 998;
+			position: relative;
+			background-color: white;
+			width: 1000px;
+			height: 500px;
+			margin-left: 170px;
+			top: 100px;
+			border: solid white;
+		}
+
+
 	</style>
 </head>	
 <body>
 
-	<img src = "http://wallpapercave.com/wp/AMV5J4Z.png" style = "width: 100%; z-index: 9998; position: absolute;"> </img>
+	<img src = "http://wallpapercave.com/wp/AMV5J4Z.png" style = "width: 100%; z-index: 997; position: absolute;"> </img>
+		<div class = "coverdiv" style = "z-index:998; position: absolute; top:120px;"></div>
 		<div class = "aboutmetitle"> About Me </div>
+		<div class = "aboutmeimg"> <img src = "C:\Users\Enoch\Desktop\web\vacationblog\img\background.jpg" style = "width:100%"></img></div>
 		<div class = "aboutmedescription"> 
 			<p>Hello my name is Samson Ko. I was born on September 11th, 1998 in New Delhi, India. I was raised in India for three years and I moved to Jeju, Korea, living there for five years. Soon later I settled in Phoenix, Arizona and attended Mountain Pointe High School. I plan to continue my education at Arizona State University class of 2021. My goal is to be major in computer science and focus on front-end web development. I want to help design websites and other online web tools. </p>
 		</div>
+		
 
 
 </html>
